@@ -1,8 +1,5 @@
 import * as React from "react";
-import hamburger from "/public/assets/burger.png";
-import logo from "/public/assets/owlbimbel.png";
 import CloseMenuIcon from "@/components/landing-pages/Icons/CloseMenuIcon";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -16,8 +13,15 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className=" bg-white flex flex-wrap items-center justify-between p-3 md:py-3 md:px-0 md:bg-transparent ">
-      <Image
+      {/* <Image
         src={logo}
+        className="h-[50px] w-[50px]"
+        alt="logo"
+        width="120"
+        height="120"
+      /> */}
+      <img
+        src="/assets/owlbimbel.png"
         className="h-[50px] w-[50px]"
         alt="logo"
         width="120"
@@ -29,14 +33,20 @@ const Navbar: React.FC = () => {
           id="hamburger"
           onClick={toggleMenu}
         >
-          <Image
+          <img
+            className={`toggle   ${isMenuOpen ? "hidden" : "block"}`}
+            src='/assets/burger.png'
+            width="40"
+            height="40"
+            alt="Open Menu"
+          />
+          {/* <Image
             className={`toggle   ${isMenuOpen ? "hidden" : "block"}`}
             src={hamburger}
             width="40"
             height="40"
             alt="Open Menu"
-          />
-
+          /> */}
           <div className={`toggle ${isMenuOpen ? "block" : "hidden"}`}>
             <CloseMenuIcon />
           </div>

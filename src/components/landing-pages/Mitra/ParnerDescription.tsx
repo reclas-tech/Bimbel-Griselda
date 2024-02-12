@@ -1,6 +1,4 @@
 import Navbar from "../Navbar";
-import Image from "next/image";
-import mitra from "/public/assets/mitra.png";
 
 export default function PatnerDescription() {
   return (
@@ -8,8 +6,15 @@ export default function PatnerDescription() {
       <Navbar />
       <div className="sm:ml-6 sm:mt-10 sm:flex sm:space-x-20 sm:justify-center sm:items-center">
         <div className="flex justify-center">
-          <Image
+          {/* <Image
             src={mitra}
+            width={403}
+            height={480}
+            alt="model"
+            className="w-[220px] h-[274.69px] sm:w-[399px] sm:h-[499px]"
+          /> */}
+          <img
+            src="/assets/mitra.png"
             width={403}
             height={480}
             alt="model"

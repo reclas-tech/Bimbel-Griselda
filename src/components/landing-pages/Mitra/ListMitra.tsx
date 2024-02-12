@@ -1,6 +1,5 @@
 import CardMitra from "./CardMitra";
 import Slider from "react-slick";
-import mitraLogo from "/public/assets/sikep.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -59,7 +58,7 @@ export default function ListMitra() {
 
       <Slider {...settings}>
         <CardMitra
-          src={mitraLogo}
+          src="/assets/sikep.png"
           title="Sikep Smart Academy"
           description="Sikep Smart Academy adalah kemitraan dari Bimbel Griselda yang berlokasi di Desa Keboansikep. Ini adalah lembaga pendidikan yang menyediakan pembelajaran Matematika dan Bahasa Inggris, dengan fokus pada pengembangan potensi siswa kelas 4,5, dan 6 SD di Desa Keboansikep"
         />

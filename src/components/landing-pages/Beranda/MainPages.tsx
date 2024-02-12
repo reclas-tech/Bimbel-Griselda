@@ -1,6 +1,4 @@
-import maskot from "/public/assets/maskot.png";
 import { Link as ScrollLink } from "react-scroll";
-import Image from "next/image";
 import Navbar from "../Navbar";
 import Link from "next/link";
 import WA from "@/components/landing-pages/Icons/contact/Wa";
@@ -9,11 +7,11 @@ import Facebook from "@/components/landing-pages/Icons/contact/Facebook";
 import Tiktok from "@/components/landing-pages/Icons/contact/Tiktok";
 
 interface props {
-  member ?: number
-  event ?: number
+  member?: number;
+  event?: number;
 }
 
-const MainPages = ({member, event} : props ) => {
+const MainPages = ({ member, event }: props) => {
   return (
     <div className="bg-[url('/assets/latar.png')] h-auto w-full sm:min-h-screen ">
       <div className="h-full gradasi w-full pb-[25%] sm:pb-0   sm:min-h-screen  sm:flex sm:flex-col">
@@ -44,12 +42,19 @@ const MainPages = ({member, event} : props ) => {
               <div className="relative  w-[219.634px] h-[245px] flex justify-center items-center  sm:h-[492px] sm:w-[441px] sm:flex sm:justify-center sm:items-center sm:left-0 ">
                 <div className="bg-[#0065FF] w-full h-[200.09px] rounded-t-[50px]  sm:h-[401px]  "></div>
                 <div className="absolute top-0 left-[12%]">
-                  <Image
+                  {/* <Image
                     src={maskot}
                     width="330"
                     height="340"
                     className="w-[219.634px] h-[245px] md:h-[492px] md:w-[397px]"
                     alt="maskot"
+                  /> */}
+                  <img
+                    src="/assets/maskot.png"
+                    alt="maskot"
+                    width={330}
+                    height={340}
+                    className="w-[219.634px] h-[245px] md:h-[492px] md:w-[397px]"
                   />
                 </div>
               </div>
@@ -67,25 +72,25 @@ const MainPages = ({member, event} : props ) => {
               <p className="text-[8px] sm:text-[15px]">Events</p>
             </div>
             <div className="w-1/3 h-full bg-[#0065FF] rounded-tr-[26px] flex justify-center items-center space-x-1 sm:rounded-tr-[0px] sm:flex sm:justify-center sm:items-center sm:space-x-3">
-              <Link href="https://wa.me/6282233216825">
+              <Link href="https:\\wa.me/6282233216825">
                 <WA
                   fill="#FAFBFD"
                   className="w-[14px] h-[14px] sm:w-[28px] sm:h-[28px]"
                 />
               </Link>
-              <Link href="https://www.instagram.com/bimbel_griselda?igsh=NTc4MTIwNjQ2YQ==">
+              <Link href="https:\\www.instagram.com/bimbel_griselda?igsh=NTc4MTIwNjQ2YQ==">
                 <Instagrams
                   fill="#FAFBFD"
                   className="w-[14px] h-[14px] sm:w-[28px] sm:h-[28px]"
                 />
               </Link>
-              <Link href="https://www.facebook.com/profile.php?id=61551844707061&mibextid=ZbWKwL">
+              <Link href="https:\\www.facebook.com/profile.php?id=61551844707061&mibextid=ZbWKwL">
                 <Facebook
                   fill="#FAFBFD"
                   className="w-[14px] h-[14px] sm:w-[28px] sm:h-[28px]"
                 />
               </Link>
-              <Link href="https://www.tiktok.com/@bimbelgriselda">
+              <Link href="https:\\www.tiktok.com/@bimbelgriselda">
                 <Tiktok
                   fill="#FAFBFD"
                   className="w-[14px] h-[14px] sm:w-[28px] sm:h-[28px]"

@@ -2,7 +2,6 @@ import CmsLayout from "@/components/cms/dashboard-admin/CmsLayout";
 import * as React from "react";
 import Breadcrumbs from "@/components/cms/dashboard-admin/Breadcrumbs";
 import InputText from "@/components/cms/login/InputText";
-import DeleteModal from "@/components/cms/DeleteModal";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import ToastSucces from "@/components/cms/ToastSucces";
@@ -51,29 +50,6 @@ const EditMaterials = () => {
     formState,
     formState: { isSubmitSuccessful },
   } = useForm();
-
-  // const { data, error, isLoading } = useSWR(`/lesson/getById`, (url) => {
-  //   return axiosPrivate
-  //     .post(
-  //       url,
-  //       {
-  //         id: router.query.id as string,
-  //       },
-  //       {
-  //         headers: {
-  //           Authorization: `Bearer ${accessToken}`,
-  //         },
-  //       }
-  //     )
-  //     .then((res) => {
-  //       setValue("mapel", res.data?.name);
-  //       setValue("description", res.data?.description);
-  //       setValue("category", res.data?.category.id);
-  //       return res.data;
-  //     });
-  // },{
-  //   revalidateOnFocus : false,
-  // });
 
   React.useEffect(() => {
     const fetchData = async () => {
@@ -173,15 +149,7 @@ const EditMaterials = () => {
       }
       setShowToastFailed(true);
     }
-    // setShowToast(true);
-    // console.log(data);
   };
-
-  // React.useEffect(() => {
-  //   if (formState.isSubmitSuccessful) {
-  //     reset({ mapel: "", kategori: "", description: "", file: {} });
-  //   }
-  // }, [formState, reset]);
 
   return (
     <CmsLayout>

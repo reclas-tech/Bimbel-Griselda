@@ -1,11 +1,8 @@
 import { Modal, ModalBody, ModalHeader } from "flowbite-react";
 import type { CustomFlowbiteTheme } from "flowbite-react";
 import * as React from "react";
-import CloseIcon from "../Icons/CloseIcon";
 import BooksIcon from "../Icons/BooksIcon";
 import WA from "../Icons/contact/Wa";
-import Image from "next/image";
-import preview from "/public/assets/preview.png";
 
 import Link from "next/link";
 
@@ -79,7 +76,7 @@ const CardLearningMaterials: React.FC<CardLearningMaterialsProps> = ({
         <ModalBody>
           <div className=" sm:flex   ">
             <div className=" h-full  overflow-x-auto w-full max-h-[450px] sm:w-1/2 sm:pl-0">
-              <Image
+              <img
                 src={
                   ("/api-backend/lesson/getFile?name=" +
                     image) as string

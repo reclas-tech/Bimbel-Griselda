@@ -209,7 +209,7 @@ const LearningMaterials = () => {
             title={materi.name}
             description={materi.description}
             whatsapp={
-              `https://wa.me/6282233216825?text=Halo+kak+saya+tertarik+untuk+membeli+materi+pembelajaran+bimbel+griselda+jenjang+kelas+${materi.category.name}+dengan+judul+materi+${encodeURI(materi.name)}+Tolong+beri+pricelist+dan+info+selengkapnya`
+              `https:\\wa.me/6282233216825?text=Halo+kak+saya+tertarik+untuk+membeli+materi+pembelajaran+bimbel+griselda+jenjang+kelas+${materi.category.name}+dengan+judul+materi+${encodeURI(materi.name)}+Tolong+beri+pricelist+dan+info+selengkapnya`
             }
           />
         ))}

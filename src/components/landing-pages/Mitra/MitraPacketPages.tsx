@@ -53,7 +53,7 @@ export default function MitraPacketPages() {
       investment: "Rp. 1.000.000",
       price: "Rp. 250.000",
       profit: 20,
-      url: "https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Standart%29+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Standart%29+tolong+beri+info+selengkapnya",
     },
     {
       id: 2,
@@ -61,7 +61,7 @@ export default function MitraPacketPages() {
       investment: "Rp. 1.000.000",
       price: "Rp. 250.000",
       profit: 20,
-      url: "https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Premium%29+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Premium%29+tolong+beri+info+selengkapnya",
     },
     {
       id: 3,
@@ -69,7 +69,7 @@ export default function MitraPacketPages() {
       investment: "Rp. 1.000.000",
       price: "Rp. 250.000",
       profit: 20,
-      url: "https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Gold%29+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Gold%29+tolong+beri+info+selengkapnya",
     },
   ];
 
@@ -209,7 +209,7 @@ export default function MitraPacketPages() {
             investment="Rp. 1.000.000"
             price="Rp. 250.000"
             profit={20}
-            href="https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Standart%29+tolong+beri+info+selengkapnya"
+            href="https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Standart%29+tolong+beri+info+selengkapnya"
           >
             <ol className="list-disc text-[12px] ml-8 sm:text-sm ">
               <li>Modul Pembelajaran Dasar.</li>
@@ -226,7 +226,7 @@ export default function MitraPacketPages() {
             investment="Rp. 1.250.000"
             price="Rp. 300.000"
             profit={20}
-            href="https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Premium%29+tolong+beri+info+selengkapnya"
+            href="https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Premium%29+tolong+beri+info+selengkapnya"
           >
             <ol className="list-disc text-[12px] ml-8 sm:text-sm ">
               <li>Semua fasilitas Paket Standar.</li>
@@ -244,7 +244,7 @@ export default function MitraPacketPages() {
             investment="Rp. 1.500.000"
             price="Rp. 350.000"
             profit={20}
-            href="https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Gold%29+tolong+beri+info+selengkapnya"
+            href="https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+menjadi+mitra+bimbel+griselda+dengan+paket+%28Gold%29+tolong+beri+info+selengkapnya"
           >
             <ol className="list-disc text-[12px] ml-8 sm:text-sm ">
               <li>Semua fasilitas Paket Premium.</li>

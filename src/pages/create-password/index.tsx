@@ -1,8 +1,5 @@
 import LoginLayout from "@/components/cms/login/LoginLayout";
 import * as React from "react";
-import logo from "../../../public/assets/logo.png";
-import Image from "next/image";
-import InputText from "@/components/cms/login/InputText";
 import InputHideText from "@/components/cms/login/InputHideText";
 import { useForm } from "react-hook-form";
 import Helper from "@/components/cms/login/Helper";
@@ -29,7 +26,6 @@ const CreatePassword = () => {
   const [message, setMessage] = React.useState<string>("");
 
   const onSubmit = async (data: any) => {
-    // setMessage("Login Anda Bermasalah");
     const newData = {
       email: router.query.email,
       otp: router.query.otp,
@@ -42,12 +38,10 @@ const CreatePassword = () => {
     }catch(error : any){
       if (error.response.status === 400) {
         setMessage(error.response.data.message[0].message);
-        // alert(error.response.data.message[0].message)
       } else {
         setMessage(error.response.data.message);
       }
     }
-    // console.log(data);
   };
 
   React.useEffect(() => {
@@ -59,7 +53,8 @@ const CreatePassword = () => {
   return (
     <LoginLayout>
       <div>
-        <Image src={logo} width={150} height={0} alt="bimbel" />
+        <img src='/assets/logo.png' width={150} height={0} alt="bimbel" />
+        {/* <Image src={logo} width={150} height={0} alt="bimbel" /> */}
       </div>
 
       <div className="text-center mb-4">

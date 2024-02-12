@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start-loc": "next start",
+    "start": "node --no-deprecation server.js",
     "lint": "next lint"
   },
   "dependencies": {

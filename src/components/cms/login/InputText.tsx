@@ -1,5 +1,3 @@
-import { useForm } from "react-hook-form";
-
 interface Props {
   placeholder: string;
   type: any;

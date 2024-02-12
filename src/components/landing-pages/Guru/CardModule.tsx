@@ -1,5 +1,3 @@
-import Image from "next/image";
-import book from "/public/assets/bookmark.png";
 import Link from "next/link";
 
 interface CardModuleProps {

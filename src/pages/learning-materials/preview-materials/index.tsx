@@ -1,9 +1,7 @@
 import CmsLayout from "@/components/cms/dashboard-admin/CmsLayout";
 import Breadcrumbs from "@/components/cms/dashboard-admin/Breadcrumbs";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const PreviewMaterials = () => {
   const crumbs = [
@@ -27,7 +25,7 @@ const PreviewMaterials = () => {
         </div>
         <div className=" flex items-end">
           {router.isReady && router.query.image && (
-            <Image
+            <img
             src={
               ("/api-backend/lesson/getFile?name=" +
               router.query.image) as string
@@ -36,6 +34,15 @@ const PreviewMaterials = () => {
             height={242}
             alt="preview"
             />
+            // <Image
+            // src={
+            //   ("/api-backend/lesson/getFile?name=" +
+            //   router.query.image) as string
+            // }
+            // width={360}
+            // height={242}
+            // alt="preview"
+            // />
           )}
         </div>
       </div>

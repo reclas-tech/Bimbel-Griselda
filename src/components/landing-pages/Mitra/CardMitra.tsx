@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface CardMitraProps {
   title?: string;
   description?: string;
@@ -17,7 +15,14 @@ const CardMitra: React.FC<CardMitraProps> = ({ title, description, src }) => {
       </div>
 
       <div className="bg-[#FFC436]  absolute left-0 top-0 flex justify-center items-center rounded-full shadow-[5px_5px_4px_0px] shadow-[#00000040] w-[77px] h-[77px] sm:w-[80px] sm:h-[80px]">
-        <Image
+        {/* <Image
+          src={src}
+          width={50}
+          height={44}
+          alt="mitra"
+          className="w-[44px] h-[44px] rounded-full sm:w-[50px] sm:h-[44px]"
+        /> */}
+        <img
           src={src}
           width={50}
           height={44}

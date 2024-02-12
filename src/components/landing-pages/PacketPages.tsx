@@ -1,7 +1,6 @@
 import CardPacket from "./CardPacket";
 import CardPacketTK from "./CardPacketTK";
 import * as React from "react";
-import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,28 +55,28 @@ export default function PacketPages() {
       title: "Calistung",
       status: "online",
       price: "Rp.50.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+Calistung+Online+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+Calistung+Online+tolong+beri+info+selengkapnya",
     },
     {
       id: 2,
       title: "International",
       status: "online",
       price: "Rp.60.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+International+Online+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+International+Online+tolong+beri+info+selengkapnya",
     },
     {
       id: 3,
       title: "Calistung",
       status: "offline",
       price: "Rp.60.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+Calistung+Offline+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+Calistung+Offline+tolong+beri+info+selengkapnya",
     },
     {
       id: 4,
       title: "International",
       status: "offline",
       price: "Rp.60.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+International+Offline+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+TK+dengan+paket+International+Offline+tolong+beri+info+selengkapnya",
     },
   ];
 
@@ -89,7 +88,7 @@ export default function PacketPages() {
       pricelist2: "Rp.75.000",
       pricelist3: "Rp.80.000",
       pricelist4: "Rp.85.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 2,
@@ -98,7 +97,7 @@ export default function PacketPages() {
       pricelist2: "Rp.85.000",
       pricelist3: "Rp.90.000",
       pricelist4: "Rp.95.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 3,
@@ -107,7 +106,7 @@ export default function PacketPages() {
       pricelist2: "Rp.90.000",
       pricelist3: "Rp.95.000",
       pricelist4: "Rp.100.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
     },
     {
       id: 4,
@@ -116,7 +115,7 @@ export default function PacketPages() {
       pricelist2: "Rp.85.000",
       pricelist3: "Rp.90.000",
       pricelist4: "Rp.95.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SD+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
     },
   ];
 
@@ -128,7 +127,7 @@ export default function PacketPages() {
       pricelist2: "Rp.85.000",
       pricelist3: "Rp.90.000",
       pricelist4: "Rp.95.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 2,
@@ -137,7 +136,7 @@ export default function PacketPages() {
       pricelist2: "Rp.95.000",
       pricelist3: "Rp.95.000",
       pricelist4: "Rp.98.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 3,
@@ -146,7 +145,7 @@ export default function PacketPages() {
       pricelist2: "Rp.95.000",
       pricelist3: "Rp.95.000",
       pricelist4: "Rp.100.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
     },
     {
       id: 4,
@@ -155,7 +154,7 @@ export default function PacketPages() {
       pricelist2: "Rp.95.000",
       pricelist3: "Rp.95.000",
       pricelist4: "Rp.98.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMP+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
     },
   ];
 
@@ -167,7 +166,7 @@ export default function PacketPages() {
       pricelist2: "Rp.95.000",
       pricelist3: "Rp.95.000",
       pricelist4: "Rp.100.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Kurikulum+Nasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 2,
@@ -176,7 +175,7 @@ export default function PacketPages() {
       pricelist2: "Rp.100.000",
       pricelist3: "Rp.100.000",
       pricelist4: "Rp.110.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Kurikulum+Internasional+tolong+beri+info+selengkapnya",
     },
     {
       id: 3,
@@ -185,7 +184,7 @@ export default function PacketPages() {
       pricelist2: "Rp.110.000",
       pricelist3: "Rp.110.000",
       pricelist4: "Rp.120.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Olimpiade+tolong+beri+info+selengkapnya",
     },
     {
       id: 4,
@@ -194,7 +193,7 @@ export default function PacketPages() {
       pricelist2: "Rp.100.000",
       pricelist3: "Rp.100.000",
       pricelist4: "Rp.110.000",
-      url: "https://wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
+      url: "https:\\wa.me/6282233216825?text=Halo+kak+saya+untuk+membeli+paket+bimbel+griselda+jenjang+kelas+SMA+dengan+paket+Intensif+English+Class+tolong+beri+info+selengkapnya",
     },
   ];
 

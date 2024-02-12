@@ -1,10 +1,16 @@
-import Image from "next/image";
-import latar from "/public/assets/latar.png";
 
 export default function Background({ children }: any) {
   return (
     <div>
-      <Image
+      <img
+        alt="Mountains"
+        src='/assets/latar.png'
+        className="w-screen object-cover"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+      {/* <Image
         alt="Mountains"
         src={latar}
         placeholder="empty"
@@ -14,7 +20,7 @@ export default function Background({ children }: any) {
         style={{
           objectFit: "cover",
         }}
-      />
+      /> */}
       {children}
     </div>
   );

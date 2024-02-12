@@ -7,8 +7,6 @@ export const useAxiosPrivate = () => {
   const refresh = useRefreshToken();
   const [accessToken, setAccessToken] = useLocalStorage("accessToken", "");
 
-  //   const { user } = useUser();
-
   useEffect(() => {
     const requestInterceptor = axiosPrivateInstance.interceptors.request.use(
       (config) => {

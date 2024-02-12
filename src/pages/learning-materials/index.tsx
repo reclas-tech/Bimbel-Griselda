@@ -2,12 +2,9 @@ import CmsLayout from "@/components/cms/dashboard-admin/CmsLayout";
 import Breadcrumbs from "@/components/cms/dashboard-admin/Breadcrumbs";
 import SearchBar from "@/components/cms/dashboard-admin/SearchBar";
 import AddNew from "@/components/cms/dashboard-admin/AddNew";
-import Image from "next/image";
-import eye from "../../../public/assets/Eye.png";
 import Link from "next/link";
 import * as React from "react";
 import { Pagination, Modal } from "flowbite-react";
-import hapus from "../../../public/assets/Delete.png";
 import ToastSucces from "@/components/cms/ToastSucces";
 import useAxiosPrivate from "@/utils/UseAxiosPrivate";
 import useLocalStorage from "@/utils/useLocalStorage";
@@ -86,78 +83,6 @@ const LearningMaterials = () => {
     setShowToast(true);
   }
 
-  // const mapel = [
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  //   {
-  //     id: "1",
-  //     name: "Ilmu Pengetahuan Alam",
-  //     kategori: "SD",
-  //   },
-  // ];
-
-  // const itemsPerPage = 5;
-
-  // const filteredItems = mapel.filter(
-  //   (item: any) =>
-  //     item.name.toLowerCase().includes(search.toLowerCase()) ||
-  //     item.kategori.toLowerCase().includes(search.toLowerCase())
-  // );
-
-  // const totalFilteredPages = Math.ceil(filteredItems.length / itemsPerPage);
-
-  // const startIndex = (currentPage - 1) * itemsPerPage;
-  // const endIndex = startIndex + itemsPerPage;
-  // const paginatedItems = filteredItems.slice(startIndex, endIndex);
-
   return (
     <CmsLayout>
       <Breadcrumbs crumbs={crumbs} />
@@ -231,7 +156,8 @@ const LearningMaterials = () => {
                     }}
                     className="w-[40px] h-[26px] bg-[#FFC436] rounded-md shadow-md text-sm flex justify-center items-center   font-medium"
                   >
-                    <Image src={eye} width={20} height={20} alt="detail" />
+                    <img src="/assets/Eye.png" width={20} height={20} alt="detail" />
+                    {/* <Image src={eye} width={20} height={20} alt="detail" /> */}
                   </Link>
                 </td>
               </tr>
@@ -284,7 +210,8 @@ const LearningMaterials = () => {
       >
         <Modal.Body className="border-4 border-[#FFC436] rounded-md py-6">
           <div className="flex flex-col justify-center items-center">
-            <Image src={hapus} width={131} height={143} alt="hapus" />
+            <img src='/assets/Delete.png' width={131} height={143} alt="hapus" />
+            {/* <Image src={hapus} width={131} height={143} alt="hapus" /> */}
             <p className="text-[#FD0000] mt-4 mb-6">
               Apakah Anda Ingin Mengapus Mata Pelajaran Ini
             </p>

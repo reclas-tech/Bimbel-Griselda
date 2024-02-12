@@ -1,5 +1,3 @@
-import Image from "next/image";
-import model from "/public/assets/model1.png";
 import Link from "next/link";
 
 export default function Offering() {
@@ -15,14 +13,21 @@ export default function Offering() {
           </p>
 
           <Link
-            href="https://wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+bergabung+WA+Grup+Calon+Guru+Bimbel+Griselda"
+            href="https:\\wa.me/6282233216825?text=Halo+kak%2C+saya+tertarik+untuk+bergabung+WA+Grup+Calon+Guru+Bimbel+Griselda"
             className="bg-[#FFF] text-[#0B7077] flex justify-center items-center  hover:text-[#FFF] hover:shadow-[inset_20rem_0_0_0] hover:shadow-[#0B7077] duration-[400ms,700ms] transition-[color,box-shadow] font-semibold w-[138.39px] h-[23.20px] text-[10px] rounded-[3px] sm:rounded-lg  sm:w-[299px] sm:h-[57px] sm:text-xl"
           >
             Join Whatsapp group
           </Link>
         </div>
-        <Image
+        {/* <Image
           src={model}
+          width={380}
+          height={380}
+          alt="model"
+          className="absolute  right-0 w-[145px] h-[185px] sm:right-[5%] sm:w-[408px] sm:h-[542px]"
+        /> */}
+        <img
+          src="/assets/model1.png"
           width={380}
           height={380}
           alt="model"

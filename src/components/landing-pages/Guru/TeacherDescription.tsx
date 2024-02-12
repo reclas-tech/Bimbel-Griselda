@@ -1,6 +1,4 @@
 import Navbar from "../Navbar";
-import Image from "next/image";
-import teacher from "/public/assets/image 5.png";
 
 export default function TeacherDescription() {
   return (
@@ -11,10 +9,15 @@ export default function TeacherDescription() {
         <div className="flex justify-center">
           <div className=" w-[229.533px] h-[229.533px ]  sm:w-[360px] sm:h-[360px] relative">
             <div className="bg-blue-700 w-[229.533px] h-[229.533px] rounded-3xl rotate-[-7.66deg] sm:w-[360px] sm:h-[360px]"></div>
-            <Image
+            {/* <Image
               src={teacher}
               width={360}
               height={360}
+              alt="teacher"
+              className="absolute top-0 w-[229.533px] h-[229.533px] sm:w-[360px] sm:h-[360px]"
+            /> */}
+            <img
+              src="/assets/image5.png"
               alt="teacher"
               className="absolute top-0 w-[229.533px] h-[229.533px] sm:w-[360px] sm:h-[360px]"
             />

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "/public/assets/owlbimbel.png";
 import WA from "../../components/landing-pages/Icons/contact/Wa";
 import Instagrams from "../../components/landing-pages/Icons/contact/Instagrams";
 import Facebook from "../../components/landing-pages/Icons/contact/Facebook";
@@ -18,8 +16,15 @@ export default function Footer() {
             <p className="font-bold text-[17px] md:text-2xl"> TENTANG KAMI</p>
           </div>
           <div className="flex space-x-4 justify-center items-center mb-2">
-            <Image
+            {/* <Image
               src={logo}
+              className="w-[48px] h-[48px]"
+              width="40"
+              height="40"
+              alt="logo"
+            /> */}
+            <img
+              src="/assets/owlbimbel.png"
               className="w-[48px] h-[48px]"
               width="40"
               height="40"
@@ -46,25 +51,25 @@ export default function Footer() {
             Sidoarjo (Lantai 2)
           </p>
           <div className=" flex space-x-3">
-            <Link href="https://wa.me/6282233216825">
+            <Link href="https:\\wa.me/6282233216825">
               <WA
                 fill="#0065FF"
                 className="h-[14px] w-[14px] md:h-[28px] md:w-[28px]"
               />
             </Link>
-            <Link href="https://www.instagram.com/bimbel_griselda?igsh=NTc4MTIwNjQ2YQ==">
+            <Link href="https:\\www.instagram.com/bimbel_griselda?igsh=NTc4MTIwNjQ2YQ==">
               <Instagrams
                 fill="#0065FF"
                 className="h-[14px] w-[14px] md:h-[28px] md:w-[28px]"
               />
             </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61551844707061&mibextid=ZbWKwL">
+            <Link href="https:\\www.facebook.com/profile.php?id=61551844707061&mibextid=ZbWKwL">
               <Facebook
                 fill="#0065FF"
                 className="h-[14px] w-[14px] md:h-[28px] md:w-[28px]"
               />
             </Link>
-            <Link href="https://www.tiktok.com/@bimbelgriselda">
+            <Link href="https:\\www.tiktok.com/@bimbelgriselda">
               <Tiktok
                 fill="#0065FF"
                 className="h-[14px] w-[14px] md:h-[28px] md:w-[28px]"

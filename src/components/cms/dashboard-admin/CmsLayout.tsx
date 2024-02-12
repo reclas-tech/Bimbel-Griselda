@@ -1,11 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import DashboardIcon from "./DadshboardIcon";
 import ModulIcon from "./ModulIcon";
 import CountIcon from "./CountIcon";
 import LogoutIcon from "./LogoutIcon";
-import foto from "../../../../public/assets/admin.png";
-import logo from "../../../../public/assets/logo.png";
 import { useRouter } from "next/router";
 import useLocalStorage from "@/utils/useLocalStorage";
 import React, { ReactNode, useEffect, useState } from "react";
@@ -55,7 +52,8 @@ const CmsLayout = ({ children }: any) => {
     <div className="w-full flex min-h-screen">
       <div className="bg-[#FFC436] w-[20%] flex flex-col justify-between items-center pt-[8%] min-h-screen ">
         <div>
-          <Image src={logo} width={120} height={0} alt="logo" />
+          <img src='/assets/logo.png' width={120} height={0} alt="logo" />
+          {/* <Image src={logo} width={120} height={0} alt="logo" /> */}
         </div>
         <div className=" h-3/4 w-full flex flex-col justify-between pl-10">
           <div className="flex flex-col space-y-2 ">
@@ -109,7 +107,8 @@ const CmsLayout = ({ children }: any) => {
           </p>
           <div className="flex space-x-4 items-center">
             <p className="text-xl font-medium">Hello Admin</p>
-            <Image src={foto} width={40} height={0} alt="bimbel" />
+            <img src='/assets/admin.png' width={40} height={0} alt="bimbel" />
+            {/* <Image src={foto} width={40} height={0} alt="bimbel" /> */}
           </div>
         </div>
         <div className=" flex flex-col py-4 px-7 w-ful min-h-[85%]  ">

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import rocket from "../../../../public/assets/rocket.png";
 const LoginLayout = ({ children }: any) => {
   return (
     <div className="w-full h-screen  flex">
@@ -11,7 +9,7 @@ const LoginLayout = ({ children }: any) => {
           <p className="text-sm font-medium">Semoga Harimu Menyenangkan</p>
         </div>
         <div>
-          <Image src={rocket} width={350} height={20} alt="logo" />
+          <img src='/assets/rocket.png' width={350} height={20} alt="logo" />
         </div>
       </div>
       <div className=" w-9/12 flex justify-center items-center">

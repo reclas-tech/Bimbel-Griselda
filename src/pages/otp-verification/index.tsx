@@ -1,7 +1,5 @@
 import LoginLayout from "@/components/cms/login/LoginLayout";
 import * as React from "react";
-import logo from "../../../public/assets/logo.png";
-import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import { Spinner } from "flowbite-react";
@@ -55,7 +53,8 @@ const OtpVerification = () => {
   return (
     <LoginLayout>
       <div>
-        <Image src={logo} width={150} height={0} alt="bimbel" />
+        <img src='/assets/logo.png' width={150} height={0} alt="bimbel" />
+        {/* <Image src={logo} width={150} height={0} alt="bimbel" /> */}
       </div>
 
       <div className="text-center ">

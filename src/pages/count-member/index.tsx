@@ -1,18 +1,11 @@
 import CmsLayout from "@/components/cms/dashboard-admin/CmsLayout";
 import * as React from "react";
 import Breadcrumbs from "@/components/cms/dashboard-admin/Breadcrumbs";
-import ToastFailed from "@/components/cms/ToastFailed";
-import plus from "../../../public/assets/plust.png";
-import minus from "../../../public/assets/minus.png";
-import Image from "next/image";
-import update from "../../../public/assets/updates.png";
 import { SubmitHandler, useForm } from "react-hook-form";
 import ToastSucces from "@/components/cms/ToastSucces";
 import { Modal } from "flowbite-react";
 import useAxiosPrivate from "@/utils/UseAxiosPrivate";
 import useLocalStorage from "@/utils/useLocalStorage";
-import { SWRResponse, mutate } from "swr";
-import useSWR from "swr";
 
 interface FormData {
   member: number;
@@ -132,7 +125,8 @@ const CountMember = () => {
                 className="bg-[#ffc43680] rounded py-1 px-2"
                 onClick={handleMinusClick}
               >
-                <Image src={minus} width={24} height={24} alt="minus" />
+                <img src='/assets/minus.png' width={24} height={24} alt="minus" />
+                {/* <Image src={minus} width={24} height={24} alt="minus" /> */}
               </button>
               <input
                 type="number"
@@ -145,7 +139,8 @@ const CountMember = () => {
                 className="bg-[#ffc43680] rounded py-1 px-2"
                 onClick={handlePlusClick}
               >
-                <Image src={plus} width={24} height={24} alt="minus" />
+                <img src='/assets/plust.png' width={24} height={24} alt="minus" />
+                {/* <Image src={plus} width={24} height={24} alt="minus" /> */}
               </button>
             </div>
 
@@ -166,7 +161,8 @@ const CountMember = () => {
             >
               <Modal.Body className="border-4 border-[#FFC436] rounded-md py-6">
                 <div className="flex flex-col justify-center items-center">
-                  <Image src={update} width={131} height={143} alt="hapus" />
+                  <img src='/assets/updates.png' width={131} height={143} alt="hapus" />
+                  {/* <Image src={update} width={131} height={143} alt="hapus" /> */}
                   <p className=" mt-4 mb-6">
                     Apakah Anda Ingin Mengupdate Data ?
                   </p>
@@ -214,7 +210,8 @@ const CountMember = () => {
                 className="bg-[#ffc43680] rounded py-1 px-2"
                 onClick={handleMinusClickEvent}
               >
-                <Image src={minus} width={24} height={24} alt="minus" />
+                <img src='/assets/minus.png' width={24} height={24} alt="minus" />
+                {/* <Image src={minus} width={24} height={24} alt="minus" /> */}
               </button>
               <input
                 type="number"
@@ -227,7 +224,8 @@ const CountMember = () => {
                 className="bg-[#ffc43680] rounded py-1 px-2"
                 onClick={handlePlusClickEvent}
               >
-                <Image src={plus} width={24} height={24} alt="minus" />
+                <img src='/assets/plust.png' width={24} height={24} alt="minus" />
+                {/* <Image src={plus} width={24} height={24} alt="minus" /> */}
               </button>
             </div>
 
@@ -248,7 +246,8 @@ const CountMember = () => {
             >
               <Modal.Body className="border-4 border-[#FFC436] rounded-md py-6">
                 <div className="flex flex-col justify-center items-center">
-                  <Image src={update} width={131} height={143} alt="hapus" />
+                  <img src='/assets/updates.png' width={131} height={143} alt="hapus" />
+                  {/* <Image src={update} width={131} height={143} alt="hapus" /> */}
                   <p className=" mt-4 mb-6">
                     Apakah Anda Ingin Mengupdate Data ?
                   </p>
