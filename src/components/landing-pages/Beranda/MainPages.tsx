@@ -5,6 +5,8 @@ import WA from "@/components/landing-pages/Icons/contact/Wa";
 import Instagrams from "@/components/landing-pages/Icons/contact/Instagrams";
 import Facebook from "@/components/landing-pages/Icons/contact/Facebook";
 import Tiktok from "@/components/landing-pages/Icons/contact/Tiktok";
+import * as React from "react";
+import { Modal, CustomFlowbiteTheme } from "flowbite-react";
 
 interface props {
   member?: number;
@@ -12,6 +14,14 @@ interface props {
 }
 
 const MainPages = ({ member, event }: props) => {
+  const [openModal, setOpenModal] = React.useState<boolean>(true);
+
+  const customTheme: CustomFlowbiteTheme["modal"] = {
+    body: {
+      base: "flex-1 overflow-auto p-6 bg-[#F1C93B]",
+      popup: "pt-0",
+    },
+  };
   return (
     <div className="bg-[url('/assets/latar.png')] h-auto w-full sm:min-h-screen ">
       <div className="h-full gradasi w-full pb-[25%] sm:pb-0   sm:min-h-screen  sm:flex sm:flex-col">
@@ -100,6 +110,50 @@ const MainPages = ({ member, event }: props) => {
           </div>
         </div>
       </div>
+
+      <Modal
+        show={openModal}
+        onClose={() => setOpenModal(false)}
+        theme={customTheme}
+        size="4xl"
+      >
+        <Modal.Body onClick={() => setOpenModal(false)}>
+          <div className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0">
+            <img
+              src="/assets/maskot.png"
+              width="330"
+              height="340"
+              className="w-[215px] flex justify-center h-[241px] md:rotate-[7deg] md:justify-start md:h-[480px] md:w-[390px]"
+              alt="maskot"
+            />
+            <div className="flex-col justify-center space-y-6 md:justify-start">
+              <div className="space-y-4 ">
+                <div>
+                  <p className="text-base ml-0 text-center font-bold uppercase md:text-xl md:text-left md:ml-4">
+                    Dapatkan Diskon Hingga
+                  </p>
+                  <p className=" text-center text-6xl leading-[5rem] font-bold md:text-left md:text-8xl">
+                    {" "}
+                    50% off
+                  </p>
+                </div>
+                <p className="text-base ml-0 text-center font-thin md:ml-4 md:text-left md:text-xl">
+                  SEKARANG JUGA BIMBEL DENGAN GURU YANG EXPERT DAN BERPENGALAMAN
+                  DI SELURUH INDONESIA
+                </p>
+              </div>
+              <div className="flex justify-center ">
+                <Link
+                  href=""
+                  className="px-11 py-3 uppercase bg-white text-xl font-bold justify-center items-center rounded-full border border-white"
+                >
+                  Ambil Kelas
+                </Link>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };

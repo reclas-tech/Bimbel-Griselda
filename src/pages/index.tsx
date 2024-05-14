@@ -7,6 +7,7 @@ import Footer from "@/components/landing-pages/Footer";
 import { axiosInstance } from "@/utils/axios";
 import * as React from "react";
 import useSWR from "swr";
+import { SetHead } from "@/utils/setHead";
 
 const Home = () => {
   const [pageLoading, setPageLoading] = React.useState<boolean>(true);
@@ -30,6 +31,11 @@ const Home = () => {
 
   return (
     <>
+      <SetHead 
+        description="Beranda Bimbel Griselda merupakan tempat bimbel terbaik di Indonesia"
+        url="https://bimbelgriselda.com"
+        keywords="griselda, bimbel"
+      />
       {pageLoading ? (
         <Loading />
       ) : (
